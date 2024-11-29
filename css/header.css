@@ -1,0 +1,150 @@
+
+/* ==================== HEADER ====================== */
+
+header{
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    background-color: var(--Ls1);
+    box-shadow: 0px 5px 5px rgba(230, 229, 229, 0.795);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#h_logo{
+    margin: 0px 10px;
+    transition: all 0.2s ease-out;
+}
+
+#h_flag{
+    position: absolute;
+    z-index: 1;
+    left: 120px;
+}
+
+#h_logo:hover{
+    scale: 1.1;
+    filter: drop-shadow(0px 0px 4px rgb(241, 132, 132));
+}
+
+header #h_title{
+    margin: 0px 10px;
+    font-size: 30px;
+    color: rgb(248, 13, 53);
+}
+
+#h_title span{
+    font-size: 38px;
+}
+
+#h_nav{
+display: flex;
+list-style: none;
+}
+
+#h_nav a{
+    margin: 5px;
+    color: rgb(233, 123, 141);
+    font-weight: 600;
+    font-size: 17px;
+    padding: 10px;
+transition: all .2s ease-out;
+}
+
+#h_nav a:hover{
+    color: rgb(248, 13, 53);
+}
+
+#h_menuBtn{
+    position: absolute;
+    right: 10px;
+    display: none;
+}
+
+#h_btn{
+    position: absolute;
+    right: 30px;
+}
+
+#h_btn .button{
+    margin: 2px;
+    padding: 2px 5px;
+    border-style: none;
+    color: white;
+    background-color: rgb(38, 117, 190);
+    border: 2px solid rgb(18, 101, 179);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+}
+
+#h_btn .button:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 4px rgba(128, 128, 128, 0.685);
+}
+
+
+
+/* ================== Media queries =============== */
+
+@media screen and (max-width: 768px) {
+    #h_logo{
+        width: 40px;
+    }
+
+    header #h_title{
+        font-size: 25px;
+    }
+
+    #h_nav a{
+        font-size: 14px;
+    }
+
+    header{
+        height: 60px;
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    #h_nav{
+     display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+ 
+    #h_btn{
+        display: none;
+    }
+
+    #h_menuBtn{
+        display: block;
+    }
+
+    #h_logo{
+       z-index: 1999;
+    }
+    
+    header #h_title{
+        z-index: 1999;
+
+    }
+
+}
+
+
+
+
+
+/* template */
+
+@media screen and (max-width: 768px) {
+
+}
+
+/* Media query for devices with a screen width of 480px or less */
+@media screen and (max-width: 480px) {
+
+}

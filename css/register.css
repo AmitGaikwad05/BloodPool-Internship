@@ -1,0 +1,166 @@
+@import url("./global.css");
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    max-width: 800px;
+    height: fit-content;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.623);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+main h2{
+color: rgb(38, 117, 190);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+}
+
+input, select{
+    border-style: none;
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 4px;
+    height: 30px;
+    text-align: center;
+}
+
+.reg_section{
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.reg_section >label{
+    background-color: rgb(255, 57, 83);
+    color: white;
+    display: block;
+    padding: 4px;
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+/* ----------------- register name ---------------- */
+#reg_name div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#reg_name div input{
+    /* width: 100%; */
+    min-width: 33.33% ;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#weight{
+    width: 60px;
+}
+
+
+/* Media query for devices with a screen width of 480px or less */
+
+/* ----------------- register name ---------------- */
+#b_type{
+    width: 60px;
+    height: 28px;
+}
+
+#reg_general div div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#reg_general div div label{
+    margin: 5px;
+}
+
+#email{
+    width: 65%;
+}
+
+#dob{
+    width: 125px;
+}
+
+/* --------------------- location ------------------ */
+
+#reg_location div input{
+    min-width: 40%;
+}
+
+/* --------------------- password ------------------ */
+#reg_pass div{
+    width: 250px;
+}
+#reg_pass div input{
+    width: 200px;
+}
+
+
+
+.showBtn{
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+}
+.showBtn:hover{
+    filter: drop-shadow(0px 0px 5px rgb(0, 178, 209));
+    cursor: pointer;
+}
+
+#registerBtn{
+    margin: 10px;
+width: 40%;
+height: 26px;
+border-style: none;
+color: white;
+background-color: rgb(38, 117, 190);
+border: 2px solid rgb(15, 89, 158);
+border-radius: 4px;
+cursor: pointer;
+transition: all 0.2s ease-out;
+
+}
+
+#registerBtn:hover{
+    width: 100%;
+}
+
+#registerPeople{
+    width: 60%;
+    position: relative;
+    bottom: 0px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    #reg_name div input{
+        min-width: 80% ;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    #reg_name div input{
+        min-width: 100% ;
+    }
+
+    #reg_location div input{
+        min-width: 100%;
+        }
+
+        form label{
+            font-size: 14px;
+        }
+}

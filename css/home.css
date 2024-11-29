@@ -1,0 +1,135 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    max-width: 630px;
+    /* margin-bottom: 240px; */
+}
+
+#homeTitle{
+    background-color: rgba(228, 228, 228, 0.541);
+    color: rgb(255, 48, 93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* --------------- Donate & Search -------------- */
+#donateDiv, #searchDiv{
+    width: 100%;
+    min-height: fit-content;
+    background-color: hsla(0, 0%, 100%, 0.863);
+    filter: drop-shadow(0px 0px 10px rgb(218, 218, 218));
+    border-radius: 8px;
+    margin: 15px;
+    padding:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#donateDiv a{
+    color: rgb(255, 32, 88);
+}
+
+#searchDiv input{
+    padding: 2px;
+}
+
+#b_type{
+    width: 60px;
+    border-style: none;
+border: 2px solid rgb(219, 219, 219) ;
+background-color: rgb(238, 238, 238);
+border-radius: 4px;
+}
+
+#searchDiv label{
+color: rgb(43, 73, 138);
+}
+
+#searchDiv input{
+width: 100%;
+height: 24px;
+border-style: none;
+border: 2px solid rgb(219, 219, 219) ;
+background-color: rgb(238, 238, 238);
+border-radius: 4px;
+}
+
+
+main h2{
+  
+    color: var(--Lp1);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main h2 img{
+    margin: 10px;
+}
+#donateDiv>button, #searchDiv>button{
+    margin: 10px 0px;
+    padding: 2px 2px;
+    font-size: 16px;
+    width: 240px;
+    color: white;
+    font-weight: 600;
+    border-style: none;
+    border-radius: 4px;
+    /* border: 2px solid var(--Lp1);
+    background-color: var(--Lp1); */
+    background-color: rgb(53, 131, 204);
+    border: 2px solid rgb(18, 101, 179);
+    transition: all 0.3s ease-out;
+}
+
+#donateDiv button:hover, #searchDiv button:hover{
+    /* background-color: var(--Lp1); */
+    width: 100%;
+    cursor: pointer;
+
+
+}
+
+    #searchDiv div{
+        margin: 8px 0px;
+        width: 100%;
+    }
+
+    #searchDiv h2, button{
+        align-self: center;
+    }
+    
+
+#homePeople{
+    width: 80vw;
+}
+
+
+#homeSlogan{
+    position: absolute;
+    color: rgb(235, 235, 235);
+    bottom: 20px;
+    font-size: 20px;
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+    @media screen and (max-width: 768px) {
+
+    }
+    
+   
+
+    @media screen and (max-width: 480px) {
+    
+    }
